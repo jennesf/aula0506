@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+html{
+   scroll-behavior: smooth; 
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Original Surfer', cursive;
+    text-align: center;
+    color: #ece6d3;
+}
+img{
+    width: 100%;
+}
+header{
+    top: 0;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: #771011;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+li{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #c0bfb2;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+h1{
+    width: 75%;
+    font-size: 1.75rem;
+}
+
+main{
+    top: 100px;
+    position: absolute;
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+h2{
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 3px 3px rgb(51, 29, 19);
+    color: #6f635b;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+.galeria{
+    border-radius: 50%;
+    width: 30%;
+    padding: 10px;
+}
+#ag, #ing, #con{
+    padding-top: 120px;
+}
+.item_agenda{
+    background-color: #c0bfb2 ;
+    color: #221712;
+    width: 80%;
+    margin: 15px;
+    border-radius: 4%;
+}
+.item_agenda img{
+    border-radius: 4%;
+}
+h3{
+    text-transform: uppercase;
+    color: rgb(82, 64, 69);
+}
+h4{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #35241c;
+}
+p{
+    font-weight: bold;
+    color: #221712;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 50px auto;
+}
+label, #qtd, #cpf, .botao{
+    font-size: 1.25rem;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
+}
+#qtd, #cpf, .botao{
+    font-family: inherit;
+    text-align: center;
+    border: none;
+    margin-bottom: 20px;
+}
+label, .botao, th{
+    background-color: #771011;
+    color: #ece6d3;
+}
+form p{
+    width: 100%;
+    font-weight: normal;
+}
+table, th, td{
+    border: 1px solid #ece6d3;
+}
+th, td{
+    padding: 10px 50px;
+}
+#nome, #email, #fone{
+    font-family: inherit;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 12px 12px 40px;
+    margin-bottom: 20px;
+}
+#nome{
+    background-image: url('../imagens/user_peq.png');
+}
+#email{
+    background-image: url('../imagens/correio_peq.png');
+}
+#fone{
+    background-image: url('../imagens/phone_peq.png');
+}
+.contato{
+    width: 10%;
+    cursor: pointer;
+}
+#exibe_contato{
+    width: 60%;
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 768px ){
+    header{
+        height: 50px;
+    }
+    ul{
+        width: 45%;
+    }
+    li{
+        width: 25%;
+    }
+    h1{
+        width: 52%;
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    a{
+        font-size: 1.25rem;
+    }
+    main{
+        top: 50px;
+    }
+    .galeria{
+        width: 20%;
+        padding: 30px;
+        transition: border-radius 2s;
+    }
+    .galeria:hover{
+        border-radius: 20%;
+    }
+    .item_agenda{
+        width: 25%;
+    }
+    form{
+        width: 50%;
+        margin-bottom: 160px;
+    }
+    label{
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    #qtd, #cpf, .botao{
+        width: 50%;
+    }
+    #nome, #email, #fone{
+        font-size: 1.25rem;
+        padding: 12px 20px 12px 50px;
+    }
+    #exibe_contato{
+        font-size: 1.5rem;
+    }
+    .botao:hover {
+        background-color: #35241c ;
+    }
+
+}
